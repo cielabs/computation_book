@@ -1,0 +1,6 @@
+[book]
+authors = ["Teon L Brooks", "Steve Azeka"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Computational Thinking in Humans and Machines"
