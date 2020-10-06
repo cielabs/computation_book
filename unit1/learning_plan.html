@@ -1,0 +1,275 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Learning Plan - Computational Thinking in Humans and Machines</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="../fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../unit1/index.html"><strong aria-hidden="true">2.</strong> Unit 1: Language</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../unit1/desired_results.html"><strong aria-hidden="true">2.1.</strong> Desired Results</a></li><li class="chapter-item expanded "><a href="../unit1/evidence.html"><strong aria-hidden="true">2.2.</strong> Evidence</a></li><li class="chapter-item expanded "><a href="../unit1/learning_plan.html" class="active"><strong aria-hidden="true">2.3.</strong> Learning Plan</a></li><li class="chapter-item expanded "><a href="../unit1/tidyblocks.html"><strong aria-hidden="true">2.4.</strong> TidyBlocks Exercise</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Computational Thinking in Humans and Machines</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#introduction-whats-the-problem-why-should-we-care" id="introduction-whats-the-problem-why-should-we-care">Introduction: What’s the problem? Why should we care?</a></h1>
+<p>Introduction to Data Science in Journalism: Show video of people in the field doing the work</p>
+<ul>
+<li>TODO: Reach out to Xavier about real-time scenario about fake news on the web. https://www.instagram.com/p/CD_1rAbAnQN/?igshid=17riidpompq6v</li>
+<li>TODO: Reach out to Lam about participating in a brief video series on the impact of misinfo in journalism</li>
+<li>Context: https://t.co/cHrbsYrShR?amp=1</li>
+<li>Charge: Video end with charge to students to help them solve the problem.
+Frame the problem
+Outline structure for the unit</li>
+</ul>
+<p>List of things to look for in science articles:</p>
+<ul>
+<li>Get list</li>
+</ul>
+<p>Lesson 1: Where did this problem come from?
+Lesson: Historical context of fake news</p>
+<ul>
+<li>Technology’s role in promoting fake news</li>
+</ul>
+<p>Activity: Explore examples requiring them to look at multiple articles that are not and are (varying levels- different sources - Social media)  - CT approach? - Decompose the article, abstract the articles,... (look for guides) - Patterns</p>
+<ul>
+<li>Google Doc: Create a list of differences and highlight what we should be looking for</li>
+<li>Articles: https://sports.theonion.com/scientists-study-brains-of-baseball-fans-to-find-out-ho-1845081906</li>
+</ul>
+<p>Find - credible source - Science (Secondary sources) -</p>
+<p>https://guides.lib.berkeley.edu/fake-news</p>
+<h1><a class="header" href="#lesson-2-analytics-skill-required" id="lesson-2-analytics-skill-required">Lesson 2: Analytics skill required</a></h1>
+<p>Based on the prior information you collected how can we use analytics to tell if articles are good or not</p>
+<ul>
+<li>Give list of things we look for</li>
+<li>(examples should be shown in TidyBlocks)</li>
+</ul>
+<p>Activity: Have students undergo another analysis using a particular analytical technique by using a calculator. The students should come to a realization that this is a lot of work and there should be a better way (leading to Tidyblocks)</p>
+<p>(Note: Need to do something with graphing.)</p>
+<h1><a class="header" href="#lesson-3-introduction-of-skill" id="lesson-3-introduction-of-skill">Lesson 3: Introduction of skill</a></h1>
+<p>What are some tools that we can use?
+Add the steps required for using tidyblocks</p>
+<ul>
+<li>Analysis</li>
+<li>Tie to the steps we have for what the students will learn</li>
+</ul>
+<p>Activity: Remixing an existing TidyBlocks setup to see how changing the different variables or blocks can influence the outcomes.</p>
+<ul>
+<li>There must be some deficits in the model (or else why wouldn’t they just use this one moving forward)</li>
+</ul>
+<h1><a class="header" href="#lesson-4-creating-your-own-tidyblocks" id="lesson-4-creating-your-own-tidyblocks">Lesson 4: Creating your own TidyBlocks</a></h1>
+<p>Define the problem and parameters of the problem for students</p>
+<p>Activity: Students will create their own model to analyze articles</p>
+<p>Pre/Post Survey - What are we measuring</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../unit1/evidence.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../unit1/tidyblocks.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="../unit1/evidence.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../unit1/tidyblocks.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
