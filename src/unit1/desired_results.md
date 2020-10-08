@@ -1,6 +1,7 @@
 # Established Goals
 
 # Understandings
+* Test
 
 # Essential Questions:
 * How do you perceive fake news and propaganda?
